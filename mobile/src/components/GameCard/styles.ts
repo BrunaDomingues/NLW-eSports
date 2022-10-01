@@ -16,7 +16,8 @@ export const styles = StyleSheet.create({
     width: '100%',
     height: 102,
     padding: 16,
-    justifyContent: 'flex-end'
+    justifyContent: 'flex-end',
+    bottom: -1
   },
   name: {
     color: THEME.COLORS.TEXT,

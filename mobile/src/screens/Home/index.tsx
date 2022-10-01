@@ -11,11 +11,8 @@ export function Home() {
       <Image source={logoImg} style={styles.logo}/>
       <Heading title="Encontre seu duo!" subtitle="Selecione o game que deseja jogar..."></Heading>
       <FlatList data={GAMES} keyExtractor={item => item.id} renderItem={({item})=> (
-        <GameCard data={item}>
-
-        </GameCard>
+        <GameCard data={item}></GameCard>
       )} horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={styles.contentList}/>
-      <GameCard data={GAMES[0]}/>
     </View>
   );
 }
